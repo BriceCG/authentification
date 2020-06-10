@@ -1,0 +1,17 @@
+<div>
+    <div class="error" style="background-color: red;color:#fff;display: inline;" ng-show="error">
+        Login echec
+    </div>
+    <form>
+        <div>
+            <label >Entrer votre nom d utilisateur</label>
+            <input type="text" ng-model="username">
+        </div>
+        <div>
+            <label >Entrer votremot de passe</label>
+            <input type="password" ng-model="password">
+        </div>
+
+        <button ng-click="login()">Login</button>
+    </form>
+</div>
