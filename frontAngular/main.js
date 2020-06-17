@@ -1,4 +1,4 @@
-var app = angular.module('app',['ngRoute'])
+var app = angular.module('app',['ngRoute','ui.bootstrap','rx'])
 
 app.config(function($routeProvider){
 
@@ -13,5 +13,6 @@ app.config(function($routeProvider){
     })
     .when('/admin',{
         templateUrl: './template/adminHome.html',
+        controller: 'adminController'
     })
 })

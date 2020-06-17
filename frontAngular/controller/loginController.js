@@ -3,6 +3,7 @@ app.controller('loginController',function($scope,$http,$location){
         //Recuperation des identifiants
         username = $scope.username
         password = $scope.password
+
         //Requete vers backend Node js
         $http({
             method: 'POST',

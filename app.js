@@ -41,6 +41,21 @@ app.post('/login',function(req,res){
     }
 })
 
+
+app.post('/addUser',function(req,res){
+    const{username,password} = req.body;
+    //Ajout d utilisateur
+    users.push({
+        username:username,
+        password:password
+    })
+    return res.send({users:users})
+})
+
+app.get('/getUsers',function(req,res){
+    return res.send({users:users})
+})
+
 app.listen(3000,function(){
     console.log('Serveur connecte')
 })

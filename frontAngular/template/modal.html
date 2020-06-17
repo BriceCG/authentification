@@ -1,0 +1,22 @@
+<div > 
+    <div class="modal-header">
+        <h3 class="modal-title">Ajouter utilisateur</h3>
+    </div>
+
+    <div class="modal-body">
+        <form ng-submit="addUser()">
+           <div class="form-group">
+               
+               <input type="text" class="form-control" ng-model="username" placeholder="Entrer le nom d utilisateur" required>
+           </div>
+           <div class="form-group">
+               <input type="text" class="form-control" ng-model="password" placeholder="Entrer le mot de passe" required>
+           </div>
+           <button class="btn btn-success">Ajouter utilisateur</button>
+        </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-danger" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</div>
